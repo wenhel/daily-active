@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Fix
         run: |
-          export SYNCFILE="lastsync2.txt"
+          export SYNCFILE="lastsync.txt"
           touch ${SYNCFILE}
           export REMOTEFILE_PC="https://webdav.pcloud.com/zotero/${SYNCFILE}"
           curl -u ${PC_EMAIL}:${PC_DAVPASS} -T ${SYNCFILE} ${REMOTEFILE_PC}
