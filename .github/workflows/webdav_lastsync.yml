@@ -20,5 +20,7 @@ jobs:
           export REMOTEFILE_JG="https://dav.jianguoyun.com/dav/zotero/${SYNCFILE}"
           curl -u ${JG_EMAIL}:${JG_DAVPASS} -T ${SYNCFILE} ${REMOTEFILE_JG}
         env:
-          KOOFR_EMAIL: ${{ secrets.KOOFR_EMAIL }}
-          KOOFR_DAVPASS: ${{ secrets.KOOFR_DAVPASS }}
+          PC_EMAIL: ${{ secrets.PC_EMAIL }}
+          PC_DAVPASS: ${{ secrets.PC_DAVPASS }}
+          JG_EMAIL: ${{ secrets.JG_EMAIL }}
+          JG_DAVPASS: ${{ secrets.JG_DAVPASS }}
